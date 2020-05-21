@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should match snapshot 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="wrapper color-secondary"
+  >
+    <PageSettings />
+  </div>
+  <div
+    className="header__heading-search-cart-container content"
+  >
+    <Link
+      className="header__title-wrapper"
+      to="/home"
+    >
+      <h2
+        className="header__title"
+      >
+        The shop
+      </h2>
+    </Link>
+    <div
+      className="header__buttons-container"
+    >
+      <BurgerMenu
+        menuItemsList={
+          Array [
+            Object {
+              "itemName": "women",
+              "url": "woman",
+            },
+            Object {
+              "itemName": "man",
+              "url": "man",
+            },
+            Object {
+              "itemName": "kids",
+              "url": "kids",
+            },
+            Object {
+              "itemName": "accessories",
+              "url": "404",
+            },
+            Object {
+              "itemName": "what's new",
+              "url": "404",
+            },
+            Object {
+              "itemName": "brands",
+              "url": "404",
+            },
+            Object {
+              "itemName": "sale",
+              "url": "404",
+            },
+            Object {
+              "itemName": "blog",
+              "url": "blog",
+            },
+          ]
+        }
+      />
+      <Input
+        className="header__search-input"
+        icon="search"
+        placeholder=""
+      />
+      <Link
+        className="header-cart-link"
+        to="/cart"
+      >
+        <i
+          className="cart icon header-cart-link__icon"
+        />
+        <span
+          className=" header-cart-link__title"
+        >
+          Cart (0)
+        </span>
+      </Link>
+    </div>
+  </div>
+  <PageNavigation
+    options={
+      Array [
+        Object {
+          "label": "women",
+          "link": "/woman",
+          "value": "women",
+        },
+        Object {
+          "label": "men",
+          "link": "/man",
+          "value": "men",
+        },
+        Object {
+          "label": "kids",
+          "link": "/kids",
+          "value": "kids",
+        },
+        Object {
+          "label": "accessories",
+          "link": "/404",
+          "value": "accs",
+        },
+        Object {
+          "label": "what's new",
+          "link": "/404",
+          "value": "new",
+        },
+        Object {
+          "label": "brands",
+          "link": "/404",
+          "value": "brands",
+        },
+        Object {
+          "label": "sale",
+          "link": "/404",
+          "value": "sale",
+        },
+        Object {
+          "label": "blog",
+          "link": "/blog",
+          "value": "blog",
+        },
+      ]
+    }
+  />
+  <WebsiteNavigation
+    className="hidden"
+  />
+</header>
+`;

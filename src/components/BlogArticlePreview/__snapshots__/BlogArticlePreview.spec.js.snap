@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlogArticlePreview /> should match snapshot 1`] = `
+<div
+  className="blog"
+>
+  <h3
+    className="blog__heading"
+  >
+    from our blog
+  </h3>
+  <div
+    className="blog__wrapper"
+  />
+  <Link
+    className="blog__read-more"
+    to="/blog"
+  >
+    read more
+  </Link>
+</div>
+`;

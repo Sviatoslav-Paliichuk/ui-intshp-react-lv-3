@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OrderPreview /> should match snapshot 1`] = `
+<div
+  className="payment"
+>
+  <ReactStripeCheckout
+    ComponentClass="span"
+    amount={1000}
+    billingAddress={true}
+    className="StripeCheckout"
+    label="Pay With Card"
+    locale="auto"
+    reconfigureOnUpdate={false}
+    shippingAddress={true}
+    stripeKey="pk_test_q7q6RtscsNRaRZnaBHuoRC7x00fupiksw6"
+    token={[Function]}
+    triggerEvent="onClick"
+  />
+</div>
+`;

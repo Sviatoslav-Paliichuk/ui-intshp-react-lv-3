@@ -1,0 +1,80 @@
+@import './variables.scss';
+
+$black: #000000;
+$white: #ffffff;
+$red: #d83e3e;
+$silver-chalice: #aaaaaa;
+$mine-shaft: #282828;
+$mercury: #e4e2e1;
+$alto: #d7d5d4;
+$emperor: #4f4f4f;
+$alabaster: #f9f9f9;
+$dove-gray: #666666;
+$red: #FF0000;
+$orange: #ff692b;
+$pale-white: rgba(255, 255, 255, 0.5);
+$pale-white-darker: rgba(255, 255, 255, 0.8);
+$dark-red: #c31326;
+$pale-grey: rgba(255, 255, 255, 0.4);
+$pale-white: rgba(255, 255, 255, 0.6);
+$pale-yellow: rgba(244, 162, 54, 0.7);
+$notification-change-grey:#444;
+$notification-info-blue:#3498db;
+$notification-success-green:#2ecc71;
+$notification-warning-orange:#e67e22;
+$notification-error-red:#e74c3c;
+$notification-custom-purple:purple;
+$orange-transparent: rgba(255, 165, 0, 1);
+$yellow-transparent: rgba(255, 229, 0, 0.5);
+$border-lightGrey: #ddd;
+
+$bg-colors: (
+  main-block: $white,
+  menu-block: $black,
+  nav-block: $white,
+  footer-block: $black,
+);
+
+$text-colors: (
+  menu-block: (
+    title: $white,
+    items: $silver-chalice,
+  ),
+  main-block: (
+    title: $black,
+    item: $mine-shaft,
+    selected: $black,
+    label1: $emperor,
+  ),
+  footer-block: (
+    title: $white,
+    items: $silver-chalice,
+    selected: $white,
+  ),
+);
+
+@function bg-color($type) {
+  @if (map-has-key($bg-colors, $type)) {
+    @return map-get($bg-colors, $type);
+  }
+  @else {
+    @debug $debug-message map-keys($bg-colors);
+    @return null;
+  }
+}
+
+@function text-color($block, $element) {
+  @if (map-has-key($text-colors, $block)) {
+    @if (map-has-key(map-get($text-colors, $block), $element)) {
+      @return map-get(map-get($text-colors, $block), $element);
+    }
+    @else {
+      @debug 'No such element, please use one of list:'map-keys(map-get($text-colors, $block));
+      @return null;
+    }
+  }
+  @else {
+    @debug $debug-message map-keys($text-colors);
+    @return null;
+  }
+}

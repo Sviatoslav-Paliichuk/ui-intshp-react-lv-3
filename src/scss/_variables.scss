@@ -1,0 +1,19 @@
+$debug-message: 'No such key, please use one of list:';
+$topic-photo-height: 300px;
+$slider-height: 300px;
+
+$spacings: (
+  small: 5px,
+  default: 15px,
+  large: 50px,
+);
+
+@function spacing ($size) {
+  @if map-has-key($spacings , $size) {
+    @return map-get($spacings, $size);
+  }
+  @else {
+    @debug $debug-message map-keys($spacings);
+    @return null;
+  }
+}

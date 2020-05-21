@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Brands /> should match snapshot 1`] = `
+<BrandsAndShippingInfo>
+  <div
+    className="content brand"
+  >
+    <Heading
+      position="center"
+      title="Brands"
+    >
+      <div
+        className="heading__wrapper"
+      >
+        <div
+          className="heading__line"
+        />
+        <div
+          className="heading__title center"
+        >
+          Brands
+        </div>
+      </div>
+    </Heading>
+    <div
+      className="container brand"
+    >
+      <ul
+        className="brand__list"
+      />
+    </div>
+  </div>
+</BrandsAndShippingInfo>
+`;

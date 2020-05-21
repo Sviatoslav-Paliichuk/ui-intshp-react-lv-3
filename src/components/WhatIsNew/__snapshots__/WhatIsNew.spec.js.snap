@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WhatIsNew /> should match snapshot 1`] = `
+<div
+  className="content what-is-new"
+>
+  <Heading
+    className="what-is-new__title}"
+    position="center"
+    title="What is new?"
+  />
+  <div
+    className="container what-is-new-wrapper"
+  />
+</div>
+`;

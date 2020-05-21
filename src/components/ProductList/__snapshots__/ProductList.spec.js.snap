@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductList /> should match snapshot 1`] = `
+<div
+  className="product-list"
+>
+  <div
+    className="product-list__filter-wrapper"
+  >
+    <Pagination
+      className=""
+      currentPage={1}
+      numberOfPages={NaN}
+      setCurrentPage={[Function]}
+      visibleNumbers={3}
+    />
+    <Connect(ProductListNavigation)
+      changeItemsNumberSelectedID={[Function]}
+      changeSortingSelectedID={[Function]}
+      dropdownItemsNumberSelectedID=""
+      dropdownSortingSelectedID=""
+    />
+  </div>
+  <div
+    className="product-list__items-list-container"
+  >
+    <Connect(ItemsList)
+      currentPage={0}
+    />
+  </div>
+  <div
+    className="product-list__filter-wrapper"
+  >
+    <Pagination
+      className=""
+      currentPage={1}
+      numberOfPages={NaN}
+      setCurrentPage={[Function]}
+      visibleNumbers={3}
+    />
+    <Connect(ProductListNavigation)
+      changeItemsNumberSelectedID={[Function]}
+      changeSortingSelectedID={[Function]}
+      dropdownItemsNumberSelectedID=""
+      dropdownSortingSelectedID=""
+    />
+  </div>
+</div>
+`;

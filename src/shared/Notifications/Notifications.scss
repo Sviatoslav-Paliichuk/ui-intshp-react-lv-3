@@ -1,0 +1,58 @@
+@import '../../scss/global_styles';
+
+
+
+.notifications {
+  &__wrapper {
+    position: fixed;
+    top: 95px;
+    right: 20px;
+    z-index: 105;
+  }
+
+  display: block;
+  padding: 16px;
+  opacity: .8;
+  transition: top 2s ease;
+  margin: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 200px;
+  min-height: 55px;
+  cursor: pointer;
+  line-height: 1.2em;
+  text-align: center;
+  color: $white;
+  
+  &__notification-box {
+    @include flex($justify: space-around, $wrap: nowrap, $align: center);
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &.change {
+    background-color: $notification-change-grey;
+  }
+
+  &.info {
+    background-color: $notification-info-blue;
+  }
+
+  &.success {
+    background-color: $notification-success-green;
+  }
+
+  &.warning {
+    background-color: $notification-warning-orange;
+  }
+
+  &.error {
+    background-color: $notification-error-red;
+  }
+
+  &.custom {
+    background-color: $notification-custom-purple;
+  }
+}

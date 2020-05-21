@@ -1,0 +1,87 @@
+@import '../../scss/global_styles';
+
+.burger-menu {
+  @keyframes open {
+    from {
+      left: -100vw;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+  #burger-menu__button {
+    display: none;
+
+    &:checked~.burger-menu__list {
+      @include flex($direction: column, $wrap: nowrap);
+      animation-name: open;
+      animation-duration: 0.8s;
+    }
+
+    &:checked~.burger-menu__image {
+      position: absolute;
+      left: 10px;
+      font-size: 2rem;
+      cursor: pointer;
+      transition: transform 0.8s ease; 
+      transform: rotate(360deg);
+    }
+  }
+
+  & {
+    display: none;
+    @include flex($wrap: nowrap);
+    width: 50px;
+    padding-right: 10px;
+
+    .icon {
+      font-size: 1.7em;
+    }
+  }
+
+  &__image {
+    margin-top: -10px;
+    margin-left: 10px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: transform 0.8s ease; 
+  }
+
+  &__list {
+    display: none;
+    position: relative;
+    top: 35px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__navigation {
+    @include flex($wrap: nowrap);
+    height: 30px;
+    z-index: 100;
+  }
+
+  &__list-item {
+    display: block;
+    width: auto;
+  }
+
+  &__link {
+    font-size: 0.9rem;
+    text-decoration: none;
+    background-color: $white;
+    color: $black;
+    display: block;
+    padding: 15px;
+    height: 50px;
+    transition: background 0.5s ease;
+    box-sizing: border-box;
+    border-bottom: 1px solid $alto;
+
+    &:hover {
+      background-color: $alto;
+      color: $mine-shaft;
+    }
+  }
+}

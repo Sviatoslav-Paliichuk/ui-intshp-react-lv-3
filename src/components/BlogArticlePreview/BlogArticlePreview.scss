@@ -1,0 +1,103 @@
+@import '../../scss/global_styles';
+
+.blog {
+  position: relative;
+  min-height: 200px;
+  padding: 20px 0px;
+
+  &__heading {
+    @include title-font;
+  }
+
+  &__wrapper {
+    display: block;
+  }
+
+  &:nth-of-type(2) {
+    display: none;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    padding: 10px;
+    background-color:$white;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    @include title-font;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  &__description {
+    font-family: font(primary-light);
+    font-size: 0.7rem;
+    color: $silver-chalice;
+  }
+
+   &__img {
+     width: 100%;
+   }
+
+   &__wrapper {
+    @include flex($direction: column, $justify: center);
+    height: 80%;
+  }
+
+  &__read-more {
+    display: block;
+	  padding: 0;
+    margin: 20px 0 0;
+    background: none;
+	  border: none;
+	  font: inherit;
+    text-align: end;
+    text-transform: uppercase;
+	  color: inherit;
+	  outline: inherit;
+    cursor: pointer;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .blog {
+    width: 100%;
+
+    &:nth-of-type(2) {
+      display: block;
+    }
+
+    &__title {
+      font-size: 0.8rem;
+    }
+  
+    &__description {
+      font-size: 0.6rem;
+    }
+
+    &__wrapper {
+      @include flex($wrap: nowrap);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .blog {
+    &__title {
+      font-size: 0.8rem;
+    }
+  
+    &__description {
+      font-size: 0.6rem;
+    }
+  }
+}
