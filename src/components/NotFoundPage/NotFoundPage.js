@@ -1,9 +1,20 @@
 import React from 'react';
+import { Button } from '@/shared';
+
+import './NotFoundPage.scss';
+
+const goBack = () => {
+  window.history.back();
+};
 
 const NotFoundPage = () => (
-  <div>
-    <h3>404 page not found</h3>
-    <p>We are sorry but the page you are looking for does not exist.</p>
+  <div className="page404__wrapper">
+    <Button
+      className="page404__button"
+      onClick={goBack}
+    >
+        &#60; Return to the previous page
+    </Button>
   </div>
 );
 

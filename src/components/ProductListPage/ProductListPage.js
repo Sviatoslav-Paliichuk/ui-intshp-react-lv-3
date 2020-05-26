@@ -22,9 +22,7 @@ class ProductListPage extends Component {
 
   render() {
     const {
-      match: {
-        params: { category }
-      },
+      location,
       resetFilterState,
       price,
       setPriceRange,
@@ -32,6 +30,7 @@ class ProductListPage extends Component {
       filterProps,
       checkCheckbox
     } = this.props;
+    const category = location.pathname.substr(1);
     const minPrice = 50;
     const maxPrice = 2000;
     const step = 10;
@@ -96,17 +95,12 @@ class ProductListPage extends Component {
 }
 
 ProductListPage.propTypes = {
-  category: PropTypes.string,
   resetFilterState: PropTypes.func.isRequired,
   price: PropTypes.object.isRequired,
   setPriceRange: PropTypes.func.isRequired,
   fetchedItemsNumber: PropTypes.number.isRequired,
   filterProps: PropTypes.object.isRequired,
   checkCheckbox: PropTypes.func.isRequired
-};
-
-ProductListPage.defaultProps = {
-  category: 'women'
 };
 
 export default ProductListPage;
