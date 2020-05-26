@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { mockedItems } from '../../mockedDataForTests/mockedDataForTests'
 
 import WhatIsNew from './WhatIsNew';
 
@@ -8,12 +9,11 @@ describe('<WhatIsNew />', () => {
 
   beforeEach(() => {
     wrapper = shallow(
-      <WhatIsNew />
+      <WhatIsNew items={mockedItems} />
     );
   });
 
   test('renders', () => {
-    wrapper = shallow(<WhatIsNew />);
     expect(wrapper.exists()).toBe(true);
   });
 

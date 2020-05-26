@@ -11,6 +11,230 @@ exports[`<WhatIsNew /> should match snapshot 1`] = `
   />
   <div
     className="container what-is-new-wrapper"
-  />
+  >
+    <ItemInfo
+      className="what-is-new-wrapper__item"
+      item={
+        Object {
+          "__v": 0,
+          "_id": "5db17cf434a29600172f6e91",
+          "brand": Array [
+            Object {
+              "__v": 0,
+              "_id": "5daf1650a3f2fe001790b09b",
+              "logo": "cm24icm93cm4rergre",
+              "title": "Boss",
+            },
+          ],
+          "brandId": "5daf1650a3f2fe001790b09b",
+          "category": "shirts",
+          "collectionIds": Array [],
+          "colors": Array [
+            "white",
+          ],
+          "createdAt": "2019-10-24T10:29:08.982Z",
+          "description": "Soft, lightweight, comfortable to wear. Simple stripe design will make you fashionable and beautiful. It can easily match with denim shorts, close-fitting pants, etc. Suitable for daily wear, perfectly displaying your temperament.",
+          "genders": Array [
+            "woman",
+          ],
+          "images": Array [
+            Object {
+              "__v": 0,
+              "_id": "5db17da834a29600172f6e92",
+              "claudinaryId": "blouse_2_1",
+              "productColor": "white",
+              "productId": "5db17cf434a29600172f6e91",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5db17daf34a29600172f6e93",
+              "claudinaryId": "blouse_2_2",
+              "productColor": "white",
+              "productId": "5db17cf434a29600172f6e91",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5db17db234a29600172f6e94",
+              "claudinaryId": "blouse_2_3",
+              "productColor": "white",
+              "productId": "5db17cf434a29600172f6e91",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5db17db434a29600172f6e95",
+              "claudinaryId": "blouse_2_4",
+              "productColor": "white",
+              "productId": "5db17cf434a29600172f6e91",
+            },
+          ],
+          "price": 320,
+          "quantity": 8,
+          "seasons": Array [
+            "spring",
+            "summer",
+            "autumn",
+          ],
+          "sellCount": 0,
+          "sizes": Array [
+            "S",
+            "M",
+            "L",
+          ],
+          "title": "White shirt with black stripes",
+          "updatedAt": "2019-10-26T23:00:47.525Z",
+        }
+      }
+      key="5db17cf434a29600172f6e91"
+    />
+    <ItemInfo
+      className="what-is-new-wrapper__item"
+      item={
+        Object {
+          "__v": 0,
+          "_id": "5db179b634a29600172f6e8a",
+          "brand": Array [
+            Object {
+              "__v": 0,
+              "_id": "5daf1650a3f2fe001790b09b",
+              "logo": "cm24icm93cm4rergre",
+              "title": "Boss",
+            },
+          ],
+          "brandId": "5daf1650a3f2fe001790b09b",
+          "category": "shirts",
+          "collectionIds": Array [],
+          "colors": Array [
+            "black",
+          ],
+          "createdAt": "2019-10-24T10:15:18.279Z",
+          "description": "Adopt breathable fabric, soft, lightweight, comfortable to wear. Simple stripe design will make you fashionable and beautiful. It can easily match with denim shorts, close-fitting pants, etc. Suitable for daily wear, perfectly displaying your temperament.",
+          "genders": Array [
+            "woman",
+          ],
+          "images": Array [
+            Object {
+              "__v": 0,
+              "_id": "5db17a7d34a29600172f6e8c",
+              "claudinaryId": "blouse_1_1",
+              "productColor": "black",
+              "productId": "5db179b634a29600172f6e8a",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5db17a8134a29600172f6e8d",
+              "claudinaryId": "blouse_1_2",
+              "productColor": "black",
+              "productId": "5db179b634a29600172f6e8a",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5db17a8434a29600172f6e8e",
+              "claudinaryId": "blouse_1_3",
+              "productColor": "black",
+              "productId": "5db179b634a29600172f6e8a",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5db17a8634a29600172f6e8f",
+              "claudinaryId": "blouse_1_4",
+              "productColor": "black",
+              "productId": "5db179b634a29600172f6e8a",
+            },
+          ],
+          "price": 200,
+          "quantity": 10,
+          "seasons": Array [
+            "spring, summer, autumn",
+          ],
+          "sellCount": 0,
+          "sizes": Array [
+            "S",
+            "M",
+          ],
+          "title": "Black shirt with white stripes",
+          "updatedAt": "2019-10-24T10:15:18.279Z",
+        }
+      }
+      key="5db179b634a29600172f6e8a"
+    />
+    <ItemInfo
+      className="what-is-new-wrapper__item"
+      item={
+        Object {
+          "__v": 0,
+          "_id": "5db069a4827ca80017ca5a28",
+          "brand": Array [
+            Object {
+              "__v": 0,
+              "_id": "5daf191ba3f2fe001790b0a0",
+              "logo": "fnllqjn238hr9u8h21n21",
+              "title": "Emporio Armani",
+            },
+          ],
+          "brandId": "5daf191ba3f2fe001790b0a0",
+          "category": "shirts",
+          "collectionIds": Array [],
+          "colors": Array [
+            "blue",
+          ],
+          "createdAt": "2019-10-23T14:54:28.157Z",
+          "description": "The classic nature of the ultimate must-have item, returns intent on representing your style to its fullest. Shirt made from jeans material, with a small collar, yoke on the back and rounded cuffs.",
+          "genders": Array [
+            "man",
+          ],
+          "imageIds": Array [],
+          "images": Array [
+            Object {
+              "__v": 0,
+              "_id": "5db1790434a29600172f6e85",
+              "claudinaryId": "armani-jeansblue-1.1",
+              "productColor": "blue",
+              "productId": "5db069a4827ca80017ca5a28",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5db1790e34a29600172f6e86",
+              "claudinaryId": "armani-jeansblue-1.2",
+              "productColor": "blue",
+              "productId": "5db069a4827ca80017ca5a28",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5db1791d34a29600172f6e87",
+              "claudinaryId": "armani-jeansblue-1.3",
+              "productColor": "blue",
+              "productId": "5db069a4827ca80017ca5a28",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5db1792534a29600172f6e88",
+              "claudinaryId": "armani-jeansblue-1.4",
+              "productColor": "blue",
+              "productId": "5db069a4827ca80017ca5a28",
+            },
+          ],
+          "price": 499,
+          "quantity": 10,
+          "seasons": Array [
+            "spring",
+            "summer",
+            "autumn",
+            "winter",
+          ],
+          "sellCount": 0,
+          "sizes": Array [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+          ],
+          "title": "Jeans shirt",
+          "updatedAt": "2019-10-23T14:54:28.157Z",
+        }
+      }
+      key="5db069a4827ca80017ca5a28"
+    />
+  </div>
 </div>
 `;

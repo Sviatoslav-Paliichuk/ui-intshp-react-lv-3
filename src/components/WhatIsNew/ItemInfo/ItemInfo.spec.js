@@ -10,7 +10,7 @@ describe('<ItemInfo />', () => {
   beforeEach(() => {
     props = {
       item: {
-        photo: 'https://www.next.ua/nxtcms/resource/image.jpg',
+        images: ['https://www.next.ua/nxtcms/resource/image.jpg'],
         title: 'Color Summer',
         collection: 'spring collection 2016',
         category: 'kids',
