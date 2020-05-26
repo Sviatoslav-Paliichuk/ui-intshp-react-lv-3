@@ -1,59 +1,48 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-
-import HttpService from '../../service/HttpService/httpService';
 
 import './CollectionPoster.scss';
 
 export const CN = 'poster';
 
-class CollectionPoster extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      posterInfo: {}
-    };
-  }
-
-  componentDidMount() {
-    this.getPosterInfo();
-  }
-
-  async getPosterInfo() {
-    const posterInfo = new HttpService();
-    const { category } = this.props;
-
-    try {
-      const response = await posterInfo.get(`${process.env.BASE_URL}/${category}`);
-      if (response && response.data) {
-        this.setState({ posterInfo: response.data });
-      }
-    } catch (error) {
-      throw (new Error());
+const CollectionPoster = (props) => {
+  const { category } = props;
+  const posterInfo = {
+    man: {
+      id: 2,
+      category: 'men',
+      title: 'new collection 2019',
+      description: 'sweater collection'
+    },
+    woman: {
+      id: 1,
+      category: 'women',
+      title: 'new collection 2019',
+      description: 'sweater collection'
+    },
+    kids: {
+      id: 3,
+      category: 'kids',
+      title: 'new collection 2019',
+      description: 'warm autumn'
     }
-  }
+  };
 
-  render() {
-    const { category } = this.props;
-    const { posterInfo } = this.state;
-
-    return (
-      <div
-        className={`${cx(CN)} container`}
-        style={{
-          backgroundImage: `url(src/assets/img/productListPage/${category}.jpg)`
-        }}
-      >
-        <div className={`${CN}__info`}>
-          <h1 className={`${CN}__info-title`}>{posterInfo.title}</h1>
-          <p className={`${CN}__info-description`}>{posterInfo.description}</p>
-        </div>
+  return (
+    <div
+      className={`${cx(CN)} container`}
+      style={{
+        backgroundImage: `url(src/assets/img/productListPage/${category}.jpg)`
+      }}
+    >
+      <div className={`${CN}__info`}>
+        <h1 className={`${CN}__info-title`}>{posterInfo[category].title}</h1>
+        <p className={`${CN}__info-description`}>{posterInfo[category].description}</p>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default CollectionPoster;
 

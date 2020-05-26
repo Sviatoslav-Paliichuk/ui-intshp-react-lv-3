@@ -10,7 +10,7 @@ exports[`<ItemInfo /> should match snapshot 1`] = `
     <img
       alt="Color Summer"
       className="item__img"
-      src="https://www.next.ua/nxtcms/resource/image.jpg"
+      src="undefined/undefined"
     />
     <span
       className="item__category"
@@ -31,6 +31,7 @@ exports[`<ItemInfo /> should match snapshot 1`] = `
       className="item__collection"
     >
       spring collection 2016
+      Hot collection
     </span>
   </div>
 </div>

@@ -1,1 +1,1 @@
-export { default } from './WhatIsNew';
+export { default } from './WhatIsNewContainer';
