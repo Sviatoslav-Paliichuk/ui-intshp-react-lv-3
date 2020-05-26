@@ -39,7 +39,9 @@ const Routes = () => (
           <DefaultLayout path="/cart" component={CartPage} />
           <DefaultLayout path="/login" component={LoginPage} />
           <DefaultLayout path="/blog" component={BlogPage} />
-          <DefaultLayout path="/:category" component={ProductListPage} />
+          <DefaultLayout path="/man" component={ProductListPage} />
+          <DefaultLayout path="/woman" component={ProductListPage} />
+          <DefaultLayout path="/kids" component={ProductListPage} />
           <DefaultLayout
             to="/not_found"
             component={NotFoundPage}
